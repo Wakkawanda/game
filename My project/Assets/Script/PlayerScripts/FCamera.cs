@@ -6,6 +6,8 @@ namespace Script.PlayerScripts
 {
     public class FCamera : MonoBehaviour
     {
+        public delegate int Test();
+        
         public bool optionSensitivity = true; 
         public bool cursorLock = true;
         
@@ -14,7 +16,6 @@ namespace Script.PlayerScripts
         private float _xRotation;
         private float _yRotation;
         
-        public Transform playerCamera;
         public Transform playerBody;
     
         void Start()
@@ -38,7 +39,7 @@ namespace Script.PlayerScripts
             _xRotation -= mouseY;
             _xRotation = Mathf.Clamp(_xRotation, -90f, 32f);
 
-            playerCamera.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
+            transform.localRotation = Quaternion.Euler(_xRotation, 0f, 0f);
         }
     }
 }
