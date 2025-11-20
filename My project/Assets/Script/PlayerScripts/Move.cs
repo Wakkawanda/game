@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-namespace Script.PlayerScripts
+namespace Script.PlayerScripts 
 {
     public class Move : MonoBehaviour
     {
@@ -58,8 +58,7 @@ namespace Script.PlayerScripts
             right.Normalize();
 
             Vector3 moveDirection = forward * _vertical + right * _horizontal;
-            _rb.linearVelocity = new Vector3(moveDirection.x * speed, _rb.linearVelocity.y, moveDirection.z * speed);
-            //_rb.linearVelocity = new Vector3(moveDirection.x, _rb.linearVelocity.y, moveDirection.z) * speed;
+            _rb.linearVelocity = new Vector3(moveDirection.x * speed, _rb.linearVelocity.y, moveDirection.z * speed);   
         }
     }
 }
