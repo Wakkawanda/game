@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -27,8 +26,7 @@ namespace Script.PlayerScripts
         {
             _isGrounded = Physics.Raycast(transform.position,Vector3.down, groundCheckDistance);
             
-            Vector2 input = new Vector2(_horizontal, _vertical);
-            MovePlayer(input);
+            MovePlayer();
         }
         
         void OnMove(InputValue movement)
@@ -47,7 +45,7 @@ namespace Script.PlayerScripts
             }
         }
 
-        private void MovePlayer(Vector2 input)
+        private void MovePlayer()
         {
             Vector3 forward = playerCamera.forward;
             Vector3 right = playerCamera.right;

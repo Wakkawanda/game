@@ -1,14 +1,17 @@
 using UnityEngine;
 
-public class Crouching : MonoBehaviour
+namespace Script.PlayerScripts
 {
-    void Start()
+    public class Crouching : MonoBehaviour
     {
+        void Start()
+        {
         
-    }
+        }
     
-    void Update()
-    {
+        void Update()
+        {
         
+        }
     }
 }
