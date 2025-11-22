@@ -8,6 +8,8 @@ namespace Script.Object
         public Coin() : base(60)
         {
             
+            
+            
         }
         
     }

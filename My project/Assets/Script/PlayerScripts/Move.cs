@@ -58,18 +58,6 @@ namespace Script.PlayerScripts
 
             Vector3 moveDirection = forward * _vertical + right * _horizontal;
             _rb.linearVelocity = new Vector3(moveDirection.x * speed, _rb.linearVelocity.y, moveDirection.z * speed);   
-            
-            //TODO убрать это
-
-            Game.GetInstance().Initialize(100, 0);
-            
-            Game game1 = Game.GetInstance();
-            game1.Initialize(200, 1);
-            
-            Debug.Log(game1.GetAccumulatedMoney());
-            Debug.Log(Game.GetInstance().GetLivedDays());
-            
-
         }
     }
 }
