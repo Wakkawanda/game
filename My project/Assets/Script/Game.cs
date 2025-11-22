@@ -19,7 +19,10 @@ namespace Script
 
         // Методы работы с полями
         public float GetAccumulatedMoney() => _accumulatedMoney;
+        public float SetAccumulatedMoney(float money) => _accumulatedMoney += money;
+        
         public float GetLivedDays() => _livedDays;
+        public float SetLivedDays(int days) => _livedDays += days;
         
         
         // Инициализация получения класса

@@ -1,6 +1,6 @@
 namespace Script.Object.Base
 {
-    public enum RareObject
+    public enum ERareObject
     {
         Common,
         Uncommon,

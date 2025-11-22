@@ -4,14 +4,14 @@ namespace Script.Object.Base
     {
         private float _price;
         private float _weight;
-        private RareObject _rare;
+        private ERareObject _eRare;
         private float _volume; // TODO Будит ли нужен объём
 
         public BaseObject(float weight)
         {
             _price = Pricing();
+            _eRare = Rare();
             _weight = weight;
-            _rare = Rare();
         }
 
         private float Pricing() // TODO Настроить цено образование. Default - 100
@@ -19,9 +19,9 @@ namespace Script.Object.Base
             return 100f;
         }
 
-        private RareObject Rare() // TODO Настроить генерацию редкости. Default - Rare  
+        private ERareObject Rare() // TODO Настроить генерацию редкости. Default - Rare  
         {
-            return RareObject.Rare; 
+            return ERareObject.Rare; 
         }
         
 
