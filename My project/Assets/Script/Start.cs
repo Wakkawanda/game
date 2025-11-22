@@ -10,12 +10,12 @@ namespace Script
         }
         
         
-        private void LoadGame(float money, int days)
+        public void LoadGame(float money, int days)
         {
             Game.GetInstance().LoadGameData(money, days);
         }
 
-        private void NewGame() => 
+        public void NewGame() => 
             Game.GetInstance();
     }
 }

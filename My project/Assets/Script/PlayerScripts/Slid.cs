@@ -61,8 +61,6 @@ namespace Script.PlayerScripts
                 sliding = false;
                 transform.localScale = new Vector3(transform.localScale.x, startYScale, transform.localScale.z);
             }
-            
         }
-    
     }
 }

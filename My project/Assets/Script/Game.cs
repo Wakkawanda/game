@@ -1,9 +1,6 @@
-using UnityEditor.ShortcutManagement;
-using UnityEngine;
-
 namespace Script
 {
-    public class Game : MonoBehaviour
+    public class Game
     {
         private static Game _instance;
         
