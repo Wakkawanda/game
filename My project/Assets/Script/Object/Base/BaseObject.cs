@@ -12,8 +12,6 @@ namespace Script.Object.Base
             _price = Pricing();
             _weight = weight;
             _rare = Rare();
-            
-            
         }
 
         private float Pricing() // TODO Настроить цено образование. Default - 100
